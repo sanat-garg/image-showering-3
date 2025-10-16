@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Shower</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            img {
+                max-width: 100%;
+            }
+            .container {
+              width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Shower</h1>
+        <img id="targetImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAgAAAACAAQAAAAADhX9iQAAABBdEVYdFNvZnR3YXJlAEFkb2JlIFBob3Rvc2hvcCBDUzYgTWFjaW50b3NoIChXaW5kb3dzKQDc4EqPAAALMUlEQVR4nO2dCVwcVZ7HP6/7y8e9F93d3X1j9zX33s1sI0WJm0xJkgkJk0xJSbKk11L+U2mQkmbZtL1bQy92lJkybJ3xYw51R5o18Wq0o0EwHjA3+n997733Hvu477O5o54x7s0f3y33n3PuHj9/nU5n07t3796969/a9+h2N4/H81P0tO/1413qD3300v/4eN18Wl8qL1+f+d7y/358/57+3j++n55vT98n83j5/n/27vT1+n79u/3T3/35576O0v6/37y33f785/616o/9s8n34+P7/0v2m/3t9N1/yT/s/6f59a570dE/317317o+13v/r/f5/n5v6/95v9uH97v3/7h7w//z2n7z232f/J7/8N3f/W/m/3T9s36f/6/9v/n+9L9P8d70+6j+6/97j/7t32L/a9/n99//5/9f/r/9P7W9/a9//2//v/2//b/9/+n//f/n/+/9/+3//v//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f
+        
+        <p id="imageDescription">An image is displayed above. Enjoy!</p>
+    </div>
+</body>
+</html>
